@@ -105,9 +105,3 @@ python test_executor_local.py
 python test_planner.py
 python validate_integration.py
 ```
-
-## Notes
-
-- `.env` is intentionally not included in this repo
-- `node_modules`, `dist`, caches, and local artifacts are excluded
-- context files, SOPs, and private hackathon notes are intentionally not included
