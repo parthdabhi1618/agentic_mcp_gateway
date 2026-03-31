@@ -1,0 +1,124 @@
+:root {
+  --background: #0a0e19;
+  --surface-container-lowest: #000000;
+  --surface-container-low: #0f131f;
+  --surface-container: #141927;
+  --surface-container-high: #1a1f2e;
+  
+  --surface-variant: #202535;
+  --outline-variant: #444855;
+  
+  --primary: #81ecff;
+  --primary-dim: #00d4ec;
+  --on-primary: #005762;
+  --on-primary-fixed: #003840;
+  
+  --secondary: #6e9bff;
+  --on-surface: #e8eafb;
+
+  --tertiary: #b5ffc2;
+  --tertiary-container: #3fff8b;
+  --on-tertiary-container: #005d2c;
+  
+  --error: #ff716c;
+  --error-container: #9f0519;
+  --on-error-container: #ffa8a3;
+  --on-error: #490006;
+  
+  /* Fonts */
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--on-surface);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  margin-top: 0;
+}
+
+button {
+  font-family: var(--font-body);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Base resets */
+pre { margin: 0; }
+
+/* Layout Utilities */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+@media (min-width: 900px) {
+  .app-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0; /* Prevents flex flex overflow when containing <pre> */
+}
+
+.sidebar-content {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .sidebar-content {
+    width: 320px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 64px;
+  }
+}
+
+/* Animations */
+@keyframes progressSweep {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(50%); }
+  100% { transform: translateX(200%); }
+}
+
+@keyframes fadeSlideIn {
+  0% { opacity: 0; transform: translateY(20px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-reveal {
+  opacity: 0;
+  animation: fadeSlideIn 0.5s ease-out forwards;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(32, 37, 53, 0.6); /* surface-variant at 60% */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(68, 72, 85, 0.15); /* Ghost border outline-variant 15% */
+  box-shadow: 0 0 60px rgba(129, 236, 255, 0.08); /* Ambient shadow primary 8% */
+}

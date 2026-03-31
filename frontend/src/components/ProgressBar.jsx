@@ -1,0 +1,27 @@
+import React from 'react';
+
+export default function ProgressBar({ loading }) {
+  if (!loading) return null;
+
+  return (
+    <div style={{
+      width: '100%',
+      height: 4,
+      background: 'var(--surface-container)',
+      borderRadius: 4,
+      overflow: 'hidden',
+      marginBottom: 32,
+      position: 'relative'
+    }}>
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '50%',
+        height: '100%',
+        background: 'linear-gradient(90deg, transparent, var(--primary), transparent)',
+        animation: 'progressSweep 1.5s infinite linear'
+      }} />
+    </div>
+  );
+}
