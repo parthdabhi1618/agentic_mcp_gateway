@@ -1,0 +1,34 @@
+{
+  "sessions": [
+    {
+      "job_id": "1cebbb90-fae0-415a-8357-e1ab21c5ca36",
+      "prompt": "",
+      "timestamp": "2026-04-11T02:34:45.748131",
+      "steps_count": 2,
+      "tools_used": [
+        "github"
+      ],
+      "final_status": "success"
+    },
+    {
+      "job_id": "730222ad-5111-41f3-a0cb-da4d377aa3b9",
+      "prompt": "",
+      "timestamp": "2026-04-11T02:36:06.066214",
+      "steps_count": 2,
+      "tools_used": [
+        "github"
+      ],
+      "final_status": "success"
+    },
+    {
+      "job_id": "6d6cbdeb-d79e-4576-b2d4-19ccb8e677ab",
+      "prompt": "",
+      "timestamp": "2026-04-11T02:43:25.475922",
+      "steps_count": 2,
+      "tools_used": [
+        "github"
+      ],
+      "final_status": "success"
+    }
+  ]
+}
