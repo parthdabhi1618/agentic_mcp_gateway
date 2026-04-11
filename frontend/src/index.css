@@ -1,0 +1,46 @@
+:root {
+  --bg-deep: #0a0f1e;
+  --bg-base: #0f172a;
+  --bg-surface: #1e293b;
+  --bg-elevated: #334155;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
+  --accent-cyan: #22d3ee;
+  --accent-blue: #3b82f6;
+  --border-subtle: rgba(99, 115, 146, 0.15);
+  --border-medium: rgba(99, 115, 146, 0.25);
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-mono: monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+  background: #0a0f1e; 
+  color: #e2e8f0; 
+  font-family: 'Inter', sans-serif; 
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased; 
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0f1e; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+} 
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+} 
+
+.animate-reveal {
+  opacity: 0; 
+  animation: fadeSlideIn 0.4s ease-out forwards;
+}
