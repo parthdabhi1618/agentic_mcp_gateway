@@ -1,0 +1,6 @@
+.vault_key
+vault.enc
+__pycache__/
+*.pyc
+.env
+.DS_Store

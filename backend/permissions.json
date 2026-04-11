@@ -1,0 +1,64 @@
+{
+  "github": {
+    "create_branch": true,
+    "delete_branch": false,
+    "merge_pr": false,
+    "push_file": false,
+    "create_issue": true,
+    "close_issue": true,
+    "comment_on_issue": true,
+    "create_pr": true,
+    "list_prs": true,
+    "list_branches": true,
+    "get_repo_info": true,
+    "list_commits": true
+  },
+  "slack": {
+    "send_message": true,
+    "create_channel": true,
+    "list_channels": true,
+    "get_messages": true,
+    "add_reaction": true,
+    "pin_message": true,
+    "invite_user": true
+  },
+  "jira": {
+    "create_issue": true,
+    "update_issue": true,
+    "close_issue": true,
+    "add_comment": true,
+    "transition_status": true,
+    "search_issues": true,
+    "assign_issue": true
+  },
+  "sheets": {
+    "append_row": true,
+    "read_range": true,
+    "update_cell": true,
+    "clear_sheet": true,
+    "create_sheet": true,
+    "list_sheets": true
+  },
+  "linear": {
+    "create_issue": true,
+    "update_issue": true,
+    "list_issues": true,
+    "assign_issue": true,
+    "set_priority": true,
+    "move_to_cycle": true
+  },
+  "notion": {
+    "create_page": true,
+    "update_page": true,
+    "append_block": true,
+    "query_database": true,
+    "create_database_entry": true
+  },
+  "discord": {
+    "send_message": true,
+    "create_channel": true,
+    "list_channels": true,
+    "add_role": false,
+    "kick_member": false
+  }
+}
